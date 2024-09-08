@@ -52,7 +52,7 @@ class Auth:
         if request is None:
             return None
 
-        SESSION_NAME = getenv("SESSION_NAME")
+        SESSION_NAME = os.getenv("SESSION_NAME")
 
         if SESSION_NAME is None:
             return None
